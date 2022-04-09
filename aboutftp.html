@@ -36,21 +36,26 @@
           alt="IIT kgp logo"
           style="border-radius: 50%"
         />
-        <a
-          class="navbar-brand mx-1"
-          href="/IRC-Bootstrap/"
-          >IR CELL,IITKGP</a
-        >
+        <a class="navbar-brand mx-1" href="/IRC-Bootstrap/">IR CELL,IITKGP</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/IRC-Bootstrap/">Home</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/IRC-Bootstrap/"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/IRC-Bootstrap/aboutftp.html">About FTP</a>
+              <a class="nav-link" href="/IRC-Bootstrap/aboutftp.html"
+                >About FTP</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/IRC-Bootstrap/contactus.html">Contact Us</a>
+              <a class="nav-link" href="/IRC-Bootstrap/contactus.html"
+                >Contact Us</a
+              >
             </li>
           </ul>
           <form class="d-flex">
@@ -65,12 +70,90 @@
             </button>
           </form>
           <div class="mx-2 my-2">
-            <a class="btn btn-warning" href="/IRC-Bootstrap/register.html">Register</a>
-            <a class="btn btn-warning" href="/login.html">Login</a>
+            <a class="btn btn-warning" href="/IRC-Bootstrap/register.html"
+              >Register</a
+            >
+            <button
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
           </div>
         </div>
       </div>
     </nav>
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >I am not a robot</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="px-4 py-5 my-5 text-center">
       <h1 class="display-5 fw-bold">About Foreign Training Program</h1>
       <div class="col-lg-6 mx-auto">
